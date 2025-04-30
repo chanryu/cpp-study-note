@@ -23,5 +23,9 @@ FetchContent_MakeAvailable(googletest)
 # Enable CTest
 enable_testing()
 
+# Add reusable module path
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
+include(study_topic)
+
 # Add topics directories
 add_subdirectory(topics/range)
