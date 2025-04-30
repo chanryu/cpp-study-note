@@ -1,5 +1,5 @@
 function(study_topic name)
-    file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/*.cpp")
+    file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS "${CMAKE_SOURCE_DIR}/topics/${name}/*.cpp")
     if(SOURCES)
         add_executable(${name}_tests ${SOURCES})
         target_link_libraries(${name}_tests PRIVATE gtest_main)
