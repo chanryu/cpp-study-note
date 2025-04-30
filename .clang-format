@@ -1,0 +1,9 @@
+---
+Language: Cpp
+BasedOnStyle: LLVM
+
+AlwaysBreakTemplateDeclarations: true
+AllowShortFunctionsOnASingleLine: Empty
+ColumnLimit: 120
+PointerAlignment: Left
+SpaceInEmptyParentheses: false
