@@ -1,3 +1,17 @@
 {
-    "C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json"
+    "clangd.arguments": [
+        "-compile-commands-dir=${workspaceFolder}/build"
+    ],
+    
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.configureArgs": [
+        "-DCMAKE_BUILD_TYPE=Debug",
+        "-GNinja",
+    ],
+
+    "editor.formatOnSave": true,
+    
+    "testMate.cpp.test.advancedExecutables": [
+        { "pattern": "${workspaceFolder}/build/bin/*_tests" }
+    ],
 }
