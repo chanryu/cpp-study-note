@@ -1,9 +1,16 @@
 {
     "clangd.arguments": [
-        "-compile-commands-dir=${workspaceFolder}/build/debug"
+        "-compile-commands-dir=${workspaceFolder}/.build/debug"
     ],
+    
+    "cmake.buildDirectory": "${workspaceFolder}/.build/debug",
+    "cmake.configureArgs": [
+        "-DCMAKE_BUILD_TYPE=Debug"
+    ],
+
+    "editor.formatOnSave": true,
+    
     "testMate.cpp.test.advancedExecutables": [
-        { "pattern": "build/debug/bin/*_tests" }
+        { "pattern": "${workspaceFolder}/.build/debug/bin/*_tests" }
     ],
-    "editor.formatOnSave": true
 }
