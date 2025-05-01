@@ -1,7 +1,9 @@
 {
-    "C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json",
+    "clangd.arguments": [
+        "-compile-commands-dir=${workspaceFolder}/build/debug"
+    ],
     "testMate.cpp.test.advancedExecutables": [
-        "build/bin/*_tests"
+        { "pattern": "build/debug/bin/*_tests" }
     ],
     "editor.formatOnSave": true
 }
