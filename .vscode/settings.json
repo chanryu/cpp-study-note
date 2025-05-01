@@ -1,4 +1,7 @@
 {
     "C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json",
-    "testMate.cpp.test.advancedExecutables": [ "build/bin/*_tests"]
+    "testMate.cpp.test.advancedExecutables": [
+        "build/bin/*_tests"
+    ],
+    "editor.formatOnSave": true
 }
